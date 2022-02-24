@@ -33,7 +33,6 @@ static float chscale = 1.0;
  * word delimiter string
  *
  * More advanced example: L" `'\"()[]{}"
- * wchar_t *worddelimiters = L" ";
  */
 wchar_t *worddelimiters = L" `'\"()[]{}:,=";
 
@@ -93,6 +92,9 @@ char *termname = "st-256color";
  *	stty tabs
  */
 unsigned int tabspaces = 8;
+
+/* bg opacity */
+float alpha = 0.82;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
